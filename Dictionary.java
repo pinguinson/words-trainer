@@ -26,14 +26,8 @@ public class Dictionary {
     }
 
     public void copyArray() {
-        for (String item: bRussian) {
-            String buff = item;
-            russian.add(buff);
-        }
-        for (String item: bEnglish) {
-            String buff = item;
-            english.add(buff);
-        }
+        russian.addAll(bRussian);
+        english.addAll(bEnglish);
     }
 
     public int randomInt() {
